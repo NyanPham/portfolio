@@ -1,0 +1,68 @@
+#home {
+    background-color: var(--background-light-blue);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 300px 400px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+
+    background-image: url(../../public/portrait.png);
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--foreground-dark-color);
+}
+.greeting {
+    
+}
+
+.greeting > h2 {
+    font-size: var(--fs-huge);
+    font-weight: bold;
+    color: var(--text-foreground-color);
+    margin-bottom: 36px;
+}
+
+.my-name {
+    color: var(--button-background-blue);
+}
+
+.position {
+    font-size: var(--fs-normal);
+    color: var(--text-foreground-color);
+    margin-bottom: 12px;
+}
+
+.greeting-text {
+    font-size: var(--fs-small);
+    color: var(--text-foreground-color);
+}
+
+.contact-button {
+    margin-top: 36px;
+    font-size: var(--fs-semi-normal);
+    padding: .5rem 1rem;
+    background-color: var(--header-background-color-dark);
+    color: var(--foreground-light-color);
+    border-radius: .5rem;
+    transition: opacity 200ms ease;
+}
+
+.contact-button > span {
+    margin-right: 1rem;
+}
+
+.contact-button:hover {
+    opacity: .7;
+}
+

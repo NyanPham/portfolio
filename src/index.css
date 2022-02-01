@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --header-background-color-dark: #2A4365;
+  --foreground-light-color: #F7FAFC;
+  --foreground-dark-color: #CBD5E0;
+  --background-light-blue: #EDF2F7;
+  --background-light-white: #fff;
+  --text-dark-color: #4A5568;
+  --text-dark-blue-color: #2D3748;
+  --text-black-color: #1A202C;
+  --accent-blue: #4299E1;
+  --accented-dark-blue: #2B6CB0;
+  --text-foreground-color: #4A5568;
+  --button-background-blue: #4299E1;
+  --footer-text-white-color: #EBF8FF;
+  --footer-text-blue-color: #90CDF4;
+
+  --fs-small: 18px;
+  --fs-semi-normal: 24px;
+  --fs-normal: 36px;
+  --fs-big: 48px;
+  --fs-huge: 60px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
