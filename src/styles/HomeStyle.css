@@ -8,6 +8,30 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    right: -15%;
+    top: -15%;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: linear-gradient(var(--footer-text-blue-color), var(--foreground-dark-color));
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+    left: -25%;
+    bottom: -55%;
+    width: 680px;
+    height: 680px;
+    border-radius: 50%;
+    background: linear-gradient(35deg, var(--footer-text-blue-color), var(--footer-text-white-color));
+    z-index: 5;
 }
 
 .profile-image {
@@ -21,9 +45,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--foreground-dark-color);
-}
-.greeting {
-    
 }
 
 .greeting > h2 {

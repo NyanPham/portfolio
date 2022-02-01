@@ -25,6 +25,12 @@
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
     border-radius: .5rem;
     color: var(--text-foreground-color);
+    transition: 250ms ease;
+}
+
+.set:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.2);
 }
 
 .set-header {

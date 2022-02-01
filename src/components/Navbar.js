@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/NavbarStyle.css'
+import { useActive } from '../contexts/ActiveContext'
 
 export default function Navbar() {
-    const [activeSection, setActiveSection] = useState('home')
+    const { activeSection } = useActive()
+    console.log(activeSection)
     const [darkTheme, setDarkTheme] = useState(false)
 
     function handleThemeChange() {

@@ -5,18 +5,24 @@ import { faEnvelope  } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
+
+
+    function handleContactClick() {
+        const a = document.createElement('a')
+        a.href="#contact"
+        a.click()
+    }
+
     return (
         <section id="home">
-            <div className="profile-image">
-                
-            </div>
+            <div className="profile-image"></div>
             <div className='greeting'>
                 <h2>Hy, I'm <span className="my-name">Nyan</span></h2>
                 <p className="position">Frontend Developer</p>
                 <p className="greeting-text">
                     I am a self-taught frontend dev with special attention to logic and workflow.
                 </p>
-                <button className="contact-button">
+                <button className="contact-button" onClick={handleContactClick}>
                     <span>Contact me</span>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </button>

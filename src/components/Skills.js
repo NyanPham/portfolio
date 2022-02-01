@@ -76,7 +76,7 @@ export default function Skills() {
                             <span className="line"></span>                          
                         </div>
                         <div className="item">
-                            <span >Japanese</span>
+                            <span className="item-name">Japanese</span>
                             <span className="dot" /> 
                             <span className="line"></span>
                         </div>

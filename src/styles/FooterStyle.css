@@ -1,0 +1,93 @@
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    grid-template-rows: 35px, auto, 10px;
+    grid-template-areas: 
+        "my-name links social"
+        "conclusion links-items social-items"
+        "copyright copyright copyright"
+    ;
+    background-color: var(--header-background-color-dark);
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.my-jap-name {
+    grid-area: my-name;
+    font-size: var(--fs-normal);
+    font-weight: bold;
+    color: var(--footer-text-white-color);
+}
+
+.conclusion {
+    grid-area: conclusion;
+}
+
+.conclusion > h3 {
+    font-size: var(--fs-semi-normal);
+    color: var(--footer-text-blue-color);
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.conclusion > p {
+    font-size: var(--fs-small);
+    color: var(--footer-text-blue-color);
+    font-weight: 400;
+}
+
+.links {
+    grid-area: links;
+    color: var(--footer-text-white-color);
+    font-size: var(--fs-semi-normal);
+    text-align: center;
+}
+
+.social {
+    grid-area: social;
+    color: var(--footer-text-white-color);
+    font-size: var(--fs-semi-normal);
+    text-align: center;
+}
+
+.links-items {
+    grid-area: links-items;
+}
+
+.social-items {
+    grid-area: social-items;
+    color: var(--footer-text-blue-color);
+}
+
+.links-items, .social-items {
+    place-self: start;
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-items {
+    gap: .5rem;
+}
+
+.links-items > a, .social-items > * {
+    font-size: var(--fs-small);
+    text-decoration: none;
+    color: var(--footer-text-blue-color); 
+}
+
+.social-items > * {
+    font-size: var(--fs-semi-normal);
+}
+
+.copyright {
+    grid-area: copyright;
+    color: var(--footer-text-white-color);
+    opacity: .7;
+}

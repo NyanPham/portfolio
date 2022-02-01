@@ -1,0 +1,27 @@
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio > h2 {
+    color: #2D3748;
+    font-size: var(--fs-normal);
+    margin-bottom: 3rem;
+}
+
+.work-swipers {
+    width: 800px;
+}
+
+
+.swiper {
+    width: 800px;;
+}
+  
+.swiper-slide {
+    text-align: left;
+    font-size: 18px;
+    background: #fff;
+}

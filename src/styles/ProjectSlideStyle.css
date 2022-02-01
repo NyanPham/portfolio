@@ -1,0 +1,67 @@
+.swiper-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.project-image {
+    width: 250px;
+    height: 200px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.project-image.id-1 {
+    background-image: url(../../public/nyandrive.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-image.id-2 {
+    background-image: url(../../public/nyandrive.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-image.id-3 {
+    background-image: url(../../public/pokedex.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-data {
+    width: 370px;
+}
+
+.project-data > .title {
+    font-size: var(--fs-semi-normal);
+    margin-bottom: 1rem;
+    color: var(--accented-dark-blue);
+    font-weight: 700;
+}
+
+.project-data > .description {
+    font-size: var(--fs-small);
+    margin-bottom: 1rem;
+    color: var(--text-dark-blue-color);
+}
+
+.demo-btn {
+    font-size: var(--fs-semi-normal);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background-color: var(--button-background-blue);
+    color: var(--foreground-light-color);
+    font-weight: bold;
+
+    transition: opacity 150ms ease-in-out;
+}
+
+.demo-btn:hover {
+    opacity: .7;
+}
