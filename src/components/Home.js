@@ -25,6 +25,9 @@ export default function Home() {
                 <FontAwesomeIcon icon={faGithub} />
                 <FontAwesomeIcon icon={faLinkedin} />
             </div>
+            <button className='scroll-indicator'>
+
+            </button>
         </section>
     )
 }

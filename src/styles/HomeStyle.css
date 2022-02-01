@@ -66,3 +66,26 @@
     opacity: .7;
 }
 
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: var(--header-background-color-dark);
+    height: 300px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    right: 300px;
+    width: 30px;
+    height: 30px;
+    background: var(--foreground-dark-color);
+    transition: transform 150ms ease;
+}
+
+.scroll-indicator:hover {
+    transform: translateY(-5px);
+}
