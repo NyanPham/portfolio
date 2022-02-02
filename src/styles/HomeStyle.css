@@ -95,18 +95,103 @@
     font-size: 1.5rem;
     color: var(--header-background-color-dark);
     height: 300px;
+    position: relative;
+}
+
+.comment-box {
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    font-size: 7rem;
+    fill:  var(--header-background-color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform-origin: bottom left;
+    animation: commentTilt 1s alternate-reverse infinite;
+}
+
+.comment-text {
+    position: absolute;
+    left: 2rem;
+    font-size: var(--fs-small);
+    color: var(--foreground-light-color);
 }
 
 .scroll-indicator {
     position: absolute;
-    bottom: 2rem;
-    right: 300px;
-    width: 30px;
-    height: 30px;
-    background: var(--foreground-dark-color);
+    bottom: -7rem;
+    right: .35rem;
     transition: transform 150ms ease;
 }
 
-.scroll-indicator:hover {
-    transform: translateY(-5px);
+.paws {
+    height: 100px;
+    width: 45px;
+    background: transparent;
 }
+
+.paw {
+    width: 24px;
+    height: auto;
+    position: absolute;
+    animation: pawStep 3s ease-in-out infinite;
+    fill: var(--accent-blue);
+}
+
+
+.paw-1 {
+    top: 0;
+    left: 0;
+    animation-delay: 0;
+}
+
+.paw-2 {
+    top: 1.5rem;
+    right: 0;
+    animation-delay: 400ms;
+}
+
+.paw-3 {
+    top: 3rem;
+    left: 0;
+    animation-delay: 800ms;
+}
+
+.paw-4 {
+    top: 4.5rem;
+    right: 0;
+    animation-delay: 1200ms;
+}
+
+.paw-5 {
+    top: 6rem;
+    left: 0;
+    animation-delay: 1600ms;
+}
+
+@keyframes commentTilt {
+    0% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes pawStep {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0
+    }
+}
+

@@ -8,8 +8,35 @@
 
 #skills > h2 {
     font-size: var(--fs-normal);
-    color: var(--text-black-color);
+    color: var(--text-dark-blue-color);
     margin-bottom: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills > h2::before {
+    content: 'What I learned?';
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center; 
+}
+
+#skills > h2::after {
+    content: "";
+    position: absolute;
+    bottom: -0.8rem;
+    margin: 0 auto;
+    width: 80%;
+    height: 3px;
+    background-color: currentColor;
+    text-align: center;
 }
 
 .skill-sets {
@@ -20,7 +47,7 @@
 .set {
     width: 330px;
     padding: 1.5rem;
-    background-color: var(--foreground-light-color);
+    background-color: var(--card-background-color);
     color: var(--header-background-color-dark);
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
     border-radius: .5rem;
@@ -65,7 +92,7 @@
 .item-name {
     z-index: 3;
     padding: 0 .5rem;
-    background-color: var(--foreground-light-color);
+    background-color: var(--card-background-color);
 }
 
 .dot {

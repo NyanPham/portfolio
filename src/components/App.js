@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from "./Navbar";
 import Home from './Home'
 import About from './About'
@@ -6,21 +6,23 @@ import Skills from './Skills'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 import Footer from './Footer';
-import ActiveProvider from '../contexts/ActiveContext'
 
 function App() {
-  return (
-	
-	<div className="portfolio">
-		<ActiveProvider>
-			<Navbar />
-			<Home />
-			<About />
-			<Skills />
-			<Portfolio />
-			<Contact />
-			<Footer />
-		</ActiveProvider>
+	const [darkTheme, setDarkTheme] = useState(false)
+
+	function handleThemeChange() {
+        setDarkTheme(prevDarkTheme => !prevDarkTheme)
+    }
+
+  	return (
+	<div className={`portfolio-app ${darkTheme ? 'dark' : ''}`}>
+		<Navbar darkTheme={darkTheme} handleThemeChange={handleThemeChange}/>
+		<Home />
+		<About />
+		<Skills />
+		<Portfolio />
+		<Contact />
+		<Footer />
 	</div>
 	
   );

@@ -10,7 +10,36 @@
     color: var(--text-dark-blue-color);
     font-size: var(--fs-normal);
     margin-bottom: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#contact > h2::before {
+    content: 'Let\'s meow?';
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center; 
+}
+
+#contact > h2::after {
+    content: "";
+    position: absolute;
+    bottom: -0.8rem;
+    margin: 0 auto;
+    width: 80%;
+    height: 3px;
+    background-color: currentColor;
+    text-align: center;
+}
+
+
 
 .contact-container {
     width: 90%;

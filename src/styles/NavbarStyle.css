@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background-color: var(--header-background-color-dark);
     display: flex;
     justify-content: space-between;
@@ -24,7 +24,6 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 nav {
     display: flex;
@@ -95,4 +94,8 @@ nav {
 
 .dark .sun, .dark .moon {
     fill: #c4a700;
+}
+
+@media screen and (max-width: 950px) {
+
 }

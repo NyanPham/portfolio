@@ -3,6 +3,7 @@
 :root {
   --header-background-color-dark: #2A4365;
   --foreground-light-color: #F7FAFC;
+  --card-background-color: #F7FAFC;
   --foreground-dark-color: #CBD5E0;
   --background-light-blue: #EDF2F7;
   --background-light-white: #fff;
@@ -35,11 +36,31 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  width: 100w;
+  position: relative;
 }
+
+.portfolio-app.dark {
+  --header-background-color-dark: #2A4365;
+  --card-background-color:  #4A5568;
+  --foreground-dark-color: #CBD5E0;
+  --background-light-blue: #1A202C;
+  --background-light-white: #1A202C;
+  --text-dark-color:  #4A5568;
+  --text-dark-blue-color: #EBF8FF;
+  --text-black-color: #4A5568;
+  --accent-blue: #4299E1;
+  --accented-dark-blue: #2B6CB0;
+  --text-foreground-color:  #F7FAFC;
+  --button-background-blue: #4299E1;
+  --footer-text-white-color: #EBF8FF;
+  --footer-text-blue-color: #90CDF4; 
+}
+
 
 section {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 button {

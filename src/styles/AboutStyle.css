@@ -4,13 +4,41 @@
     align-items: center;
     flex-direction: column;
     z-index: 10;
+    background-color: var(--background-light-white);
 }
 
 #about > h2 {
     color: var(--text-dark-blue-color);
     font-size: var(--fs-normal);
     margin-bottom: 3rem;
-    z-index: 5
+    z-index: 5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about > h2::before {
+    content: 'Who am I?';
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center; 
+}
+
+#about > h2::after {
+    content: "";
+    position: absolute;
+    bottom: -0.8rem;
+    margin: 0 auto;
+    width: 80%;
+    height: 3px;
+    background-color: currentColor;
+    text-align: center;
 }
 
 .my-intro {
@@ -32,7 +60,8 @@
     gap: 2rem;
     justify-content: center;
     align-items: flex-end;
-    z-index: 5
+    z-index: 5;
+    color: var(--text-dark-blue-color);
 }
 
 .illustration-container {

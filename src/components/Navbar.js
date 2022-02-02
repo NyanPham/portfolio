@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/NavbarStyle.css'
 
-export default function Navbar() {
+export default function Navbar({darkTheme, handleThemeChange}) {
     const [activeSection, setActiveSection] = useState('home')
-    const [darkTheme, setDarkTheme] = useState(false)
     let sections = []
-
-    function handleThemeChange() {
-        setDarkTheme(prevDarkTheme => !prevDarkTheme)
-    }
 
     useEffect(() => {
         sections = document.querySelectorAll('section')
