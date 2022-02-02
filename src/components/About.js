@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/AboutStyle.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 export default function About() {
+
     return (
-        <section id="about">
+        <section id="about" >
             <h2>About me</h2>
             <div className="my-intro">
                 <div className="my-text">

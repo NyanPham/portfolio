@@ -16,8 +16,8 @@
     position: absolute;
     right: -15%;
     top: -15%;
-    width: 380px;
-    height: 380px;
+    width: 30vw;
+    height: 30vw;
     border-radius: 50%;
     background: linear-gradient(var(--footer-text-blue-color), var(--foreground-dark-color));
 }
@@ -27,11 +27,11 @@
     position: absolute;
     left: -25%;
     bottom: -55%;
-    width: 680px;
-    height: 680px;
+    width: 45vw;
+    height: 45vw;
     border-radius: 50%;
     background: linear-gradient(35deg, var(--footer-text-blue-color), var(--footer-text-white-color));
-    z-index: 5;
+    z-index: 1;
 }
 
 .profile-image {

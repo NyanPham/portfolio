@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/HomeStyle.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope  } from '@fortawesome/free-solid-svg-icons'
@@ -6,15 +6,16 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
 
-
     function handleContactClick() {
         const a = document.createElement('a')
         a.href="#contact"
         a.click()
     }
 
+    
+
     return (
-        <section id="home">
+        <section id="home" >
             <div className="profile-image"></div>
             <div className='greeting'>
                 <h2>Hy, I'm <span className="my-name">Nyan</span></h2>

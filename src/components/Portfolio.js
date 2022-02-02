@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/PortfolioStyle.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
@@ -6,8 +6,8 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import ProjectSlide from './ProjectSlide'
 
-export default function Portfolio() {
 
+export default function Portfolio() {
     const projectsData = [
         {
             imgId: 'id-1' ,

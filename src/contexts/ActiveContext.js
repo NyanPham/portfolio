@@ -5,10 +5,10 @@ export const useActive = () => useContext(ActiveContext)
 
 
 export default function ActiveProvider({ children }) {
-    const [activeSection, setActiceSection] = useState('home')
+    const [activeSection, setActiveSection] = useState('home')
 
     return (
-        <ActiveContext.Provider value={{ activeSection }}>
+        <ActiveContext.Provider value={{ activeSection, setActiveSection }}>
             {children}
         </ActiveContext.Provider>
     )

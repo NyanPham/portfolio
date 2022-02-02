@@ -10,6 +10,7 @@
     color: var(--text-dark-blue-color);
     font-size: var(--fs-normal);
     margin-bottom: 3rem;
+    z-index: 5
 }
 
 .my-intro {
@@ -18,6 +19,7 @@
     flex-wrap: wrap;
     max-width: 90%;
     gap: 3rem;
+    z-index: 5
 }
 
 .my-text {
@@ -30,6 +32,7 @@
     gap: 2rem;
     justify-content: center;
     align-items: flex-end;
+    z-index: 5
 }
 
 .illustration-container {

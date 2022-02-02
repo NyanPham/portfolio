@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/NavbarStyle.css'
-import { useActive } from '../contexts/ActiveContext'
 
 export default function Navbar() {
-    const { activeSection } = useActive()
-    console.log(activeSection)
+    const [activeSection, setActiveSection] = useState('home')
     const [darkTheme, setDarkTheme] = useState(false)
+    let sections = []
 
     function handleThemeChange() {
         setDarkTheme(prevDarkTheme => !prevDarkTheme)
     }
+
+    useEffect(() => {
+        sections = document.querySelectorAll('section')
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return
+                setActiveSection(entry.target.id)
+            })
+        }, { threshold: 0.7, rootMargin: '0px' })
+        sections.forEach(section => {
+            observer.observe(section)
+        })
+    }, [])
+
 
     return (
         <div className={`header ${darkTheme ? 'dark' : ''}`}>

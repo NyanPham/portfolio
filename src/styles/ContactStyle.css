@@ -64,6 +64,10 @@
     opacity: .7;
 }
 
+.send-btn:disabled {
+    cursor: not-allowed;
+}
+
 
 .field {
     position: relative;
@@ -90,10 +94,20 @@
     resize: none;
 }
 
-.field > span {
+.custom-placeholder {
     position: absolute;
     top: 7px;
     left: 10px;
+    font-size: 1.2em;
+    transition: 250ms ease-in-out;
+}
+
+.custom-placeholder.hold, 
+.field > input:focus + .custom-placeholder, 
+.field > textarea:focus + .custom-placeholder {
+    top: -25px;
+    left: 3px;
+    font-size: 1em;
 }
 
 .contact-methods {

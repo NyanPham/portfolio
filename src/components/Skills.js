@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/SkillsStyle.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faDatabase, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 
+
 export default function Skills() {
+
     return (
-        <section id="skills">
+        <section id="skills" >
             <h2>My skills</h2>
             <div className="skill-sets">
                 <div className="set">
