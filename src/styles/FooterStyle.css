@@ -91,3 +91,24 @@ footer {
     color: var(--footer-text-white-color);
     opacity: .7;
 }
+
+@media screen and (max-width: 970px) {
+}
+
+@media screen and (max-width: 790px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links-items, .social-items {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 550px) {
+
+}

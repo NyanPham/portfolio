@@ -28,6 +28,7 @@
 nav {
     display: flex;
     gap: .5rem;
+    align-items: center;
 }
 
 .nav-links {
@@ -96,6 +97,102 @@ nav {
     fill: #c4a700;
 }
 
-@media screen and (max-width: 950px) {
+.bars {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(66, 153, 225, .4);
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 250ms ease;
+    border-radius: .25rem;
+    margin-left: 3px;
+}
 
+.bars:hover {
+    opacity: 0.8;
+}
+
+.bar {
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 3px;
+    background: white;
+    transition: top, transform, 250ms ease-in-out;
+}
+
+.bar:first-child {
+    transform: translateY(-0.7rem);
+}
+
+.bar:last-child {
+    transform: translateY(0.7rem);
+}
+
+.dropdown-active .bar:nth-child(2) {
+    transform: scale(0);
+}
+
+.dropdown-active .bar:first-child {
+    transform: rotate(45deg);
+}
+
+.dropdown-active .bar:last-child {
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        justify-content: center;
+    }
+    .logo-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        justify-content: space-between;
+        padding: .5rem 1rem;
+    }
+
+    .logo-container {
+        display: initial;
+    }
+
+    .nav-links {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        background-color: var(--accented-dark-blue);
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0);
+        transform-origin: top right;
+        z-index: 1100;
+
+        transition: opacity, transform, 350ms ease;
+    }
+
+    .dark .nav-links {
+        background-color: var(--background-light-blue) ;
+    }
+
+    .dropdown-active .nav-links {
+        opacity: 1;
+        pointer-events: all;
+        transform: scale(1)
+    }
+
+    .bars {
+        display: flex;
+        z-index: 1100;
+    }
 }

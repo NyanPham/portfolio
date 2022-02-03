@@ -52,7 +52,7 @@
 
 .contact-form {
     display: grid;
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: repeat(2, minmax(150px, 250px));
     grid-template-rows: repeat(5, 43px);
     grid-template-areas: 
         "name email"
@@ -187,4 +187,26 @@
 .method-text {
     grid-area: text;
     color: var(--text-black-color);
+}
+
+@media screen and (max-width: 970px) {
+    #contact {
+        height: max-content;
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+}
+@media screen and (max-width: 550px) {
+    .contact-form {
+        grid-template-columns: minmax(250px, 500px);
+        grid-template-rows: repeat(5, 40px);
+        grid-template-areas: 
+            "name"
+            "email"
+            "message"
+            "message"
+            "button"
+    }
 }

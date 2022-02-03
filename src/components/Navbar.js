@@ -3,10 +3,13 @@ import '../styles/NavbarStyle.css'
 
 export default function Navbar({darkTheme, handleThemeChange}) {
     const [activeSection, setActiveSection] = useState('home')
+    const [windowSize, setWindowSize] = useState(window.innerWidth)
+    const [dropdownActive, setDropDownActive] = useState(false)
+
     let sections = []
 
     useEffect(() => {
-        sections = document.querySelectorAll('section')
+        getAllSections()
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return
@@ -16,8 +19,21 @@ export default function Navbar({darkTheme, handleThemeChange}) {
         sections.forEach(section => {
             observer.observe(section)
         })
-    }, [])
+    },[windowSize])
 
+    window.addEventListener('resize', (e) => {
+        setWindowSize(window.innerWidth)
+    })
+
+
+    function getAllSections() {
+        sections = document.querySelectorAll('section')
+    }
+
+    function handleNavLinkClick(e) {
+        if (!dropdownActive) return
+        setDropDownActive(false)
+    }
 
     return (
         <div className={`header ${darkTheme ? 'dark' : ''}`}>
@@ -26,8 +42,8 @@ export default function Navbar({darkTheme, handleThemeChange}) {
 
                 </div>
             </div>
-            <nav>
-                <ul className="nav-links">
+            <nav className={`${dropdownActive ? 'dropdown-active' : ''}`}>
+                <ul className="nav-links" onClick={handleNavLinkClick}>
                     <li><a href="#home" className={`${activeSection === 'home' ? 'active': ''}`}>Home</a></li>
                     <li><a href="#about" className={`${activeSection === 'about' ? 'active': ''}`}>About</a></li>
                     <li><a href="#skills" className={`${activeSection === 'skills' ? 'active': ''}`}>Skill</a></li>
@@ -48,6 +64,11 @@ export default function Navbar({darkTheme, handleThemeChange}) {
                         )} 
                     </div>
                 </button>
+                <div className="bars" onClick={() => setDropDownActive(prevDropdownActive => !prevDropdownActive)}>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </div>
             </nav>
         </div>
     )

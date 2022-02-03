@@ -14,12 +14,13 @@
   --accented-dark-blue: #2B6CB0;
   --text-foreground-color: #4A5568;
   --button-background-blue: #4299E1;
-  --footer-text-white-color: #EBF8FF;
+  --footer-text-white-color: #3a5f74;
   --footer-text-blue-color: #90CDF4;
 
   --fs-small: 18px;
   --fs-semi-normal: 24px;
   --fs-normal: 36px;
+  --fs-semi-big: 40px;
   --fs-big: 48px;
   --fs-huge: 60px;
 }
@@ -71,4 +72,11 @@ button {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 560px) {
+  section { 
+    height: max-content;
+    padding: 3rem .5rem;
+  }
 }

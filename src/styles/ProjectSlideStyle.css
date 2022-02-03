@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    width: 100%;
+    padding: 1rem 3rem;
 }
 
 .project-image {
@@ -35,7 +37,7 @@
 }
 
 .project-data {
-    width: 370px;
+    max-width: 350px;
 }
 
 .project-data > .title {
@@ -64,4 +66,38 @@
 
 .demo-btn:hover {
     opacity: .7;
+}
+
+@media screen and (max-width: 860px) {
+    .swiper-data {
+        flex-direction: column;
+        padding: 0;
+    }
+    .project-image {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .project-image {
+        width: 300px;
+        height: 170px;
+    }
+
+    .project-data {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .project-image {
+        width: 230px;
+        height: 140px;
+    }
+
+    .project-data {
+        max-width: 230px;
+    }
 }

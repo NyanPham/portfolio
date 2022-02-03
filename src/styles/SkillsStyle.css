@@ -41,9 +41,11 @@
 
 .skill-sets {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 .set {
     width: 330px;
     padding: 1.5rem;
@@ -113,4 +115,16 @@
     transform: translateY(12px);
     background-color: var(--foreground-dark-color);
     z-index: -1;
+}
+
+
+
+@media screen and (max-width: 860px) {
+    
+}
+
+@media screen and (max-width: 750px) {
+}
+@media screen and (max-width: 550px) {
+
 }

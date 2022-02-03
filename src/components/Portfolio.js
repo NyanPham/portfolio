@@ -35,7 +35,7 @@ export default function Portfolio() {
     return (
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <Swiper navigation={true} modules={[Navigation]} slidesPerView={ 1 } className="work-swipers">
+            <Swiper navigation={true} modules={[Navigation]} slidesPerView={ 1 } spaceBetween={50} className="work-swipers">
                 {projectsData.map((project, index) => {
                     return (
                         <SwiperSlide key={`swiper_${index}`}>
