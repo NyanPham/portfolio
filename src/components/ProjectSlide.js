@@ -1,16 +1,16 @@
 import React from 'react';
 import '../styles/ProjectSlideStyle.css'
 
-export default function ProjectSlide({imgId, title, description, demoLink, githubLink}) {
+export default function ProjectSlide({image, title, description, demoLink, githubLink}) {
    
     function handleDemoClick() {
-
+        //Add link here
     }
 
     return (
         <div className="swiper-data">
             <div className="project-image-container">
-                <img className={`project-image ${imgId}`}/>
+                <img className='project-image' src={image}/>
             </div>
            
             <div className="project-data">

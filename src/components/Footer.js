@@ -19,8 +19,8 @@ export default function Footer() {
             <h3 className="links">Links</h3>
             <div className="links-items">
                 <a href="#portfolio">Portfolio</a>
-                <a href="#skils">Skills</a>
-                <a href="contact">Contact</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div> 
 
             <h3 className="social">Social media</h3>

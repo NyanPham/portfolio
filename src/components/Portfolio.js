@@ -1,30 +1,33 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../styles/PortfolioStyle.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import ProjectSlide from './ProjectSlide'
+import nyanLogo from '../assets/nyan-logo.png'
+import nyanDrive from '../assets/nyandrive.png'
+import pokedexImg from '../assets/pokedex.png'
 
 
 export default function Portfolio() {
     const projectsData = [
         {
-            imgId: 'id-1' ,
+            image: nyanDrive ,
             title: 'Nyan Drive',
             description: 'A functional Google-Drive-like app where users can sign up, login, create folders, add files, update and delete them.',
             demoLink: '#',
             githubLink: '#'
         },
         {
-            imgId: 'id-2',
+            image: nyanLogo,
             title: 'Todo App',
             description: 'A typical, yet not simple project about CRUD operation, which indeed is necessary in any interactive web application.',
             demoLink: '#',
             githubLink: '#'
         },
         {
-            imgId: 'id-3',
+            image: pokedexImg,
             title: 'PokeDex',
             description: 'A great simple simulator of PokeDex can satisfy your every wish to know a pokemon\'s information.',
             demoLink: '#',
@@ -40,7 +43,7 @@ export default function Portfolio() {
                     return (
                         <SwiperSlide key={`swiper_${index}`}>
                             <ProjectSlide 
-                                imgId={project.imgId} 
+                                image={project.image} 
                                 title={project.title}
                                 description={project.description}
                                 demoLink={project.demoLink}

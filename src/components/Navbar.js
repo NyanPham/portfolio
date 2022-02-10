@@ -46,7 +46,7 @@ export default function Navbar({darkTheme, handleThemeChange}) {
                 <ul className="nav-links" onClick={handleNavLinkClick}>
                     <li><a href="#home" className={`${activeSection === 'home' ? 'active': ''}`}>Home</a></li>
                     <li><a href="#about" className={`${activeSection === 'about' ? 'active': ''}`}>About</a></li>
-                    <li><a href="#skills" className={`${activeSection === 'skills' ? 'active': ''}`}>Skill</a></li>
+                    <li><a href="#skills" className={`${activeSection === 'skills' ? 'active': ''}`}>Skills</a></li>
                     <li><a href="#portfolio" className={`${activeSection === 'portfolio' ? 'active': ''}`}>Portfolio</a></li>
                     <li><a href="#contact" className={`${activeSection === 'contact' ? 'active': ''}`}>Contact</a></li>
                     <div className="hover-layer"></div>

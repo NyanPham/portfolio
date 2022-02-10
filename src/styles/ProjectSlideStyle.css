@@ -8,33 +8,20 @@
     padding: 1rem 3rem;
 }
 
-.project-image {
+.project-image-container {
     width: 250px;
     height: 200px;
+    background-color: blue;
+}
+
+.project-image {
+    max-width: 100%;
+    max-height: 100%;
     border-radius: .5rem;
-    overflow: hidden;
+    object-fit:scale-down;
+    object-position: center;
 }
 
-.project-image.id-1 {
-    background-image: url(../../public/nyandrive.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.project-image.id-2 {
-    background-image: url(../../public/nyandrive.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.project-image.id-3 {
-    background-image: url(../../public/pokedex.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .project-data {
     max-width: 350px;

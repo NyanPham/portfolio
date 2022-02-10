@@ -74,21 +74,9 @@ export default function Contact() {
 					</form>
 
 					<div className="contact-methods">
-						<div className="contact-method">
-							<FontAwesomeIcon icon={faEnvelope} className="method-icon" />
-							<div className="method-name">Email</div>
-							<p className="method-text">nyanphamdev@gmail.com</p>
-						</div>
-						<div className="contact-method">
-							<FontAwesomeIcon icon={faPhone} className="method-icon" />
-							<div className="method-name">Phone call</div>
-							<p className="method-text">0947-057-091</p>
-						</div>
-						<div className="contact-method">
-							<FontAwesomeIcon icon={faMapMarkerAlt} className="method-icon" />
-							<div className="method-name">Location</div>
-							<p className="method-text">Binh Thanh Dist, HCMC</p>
-						</div>
+						<ContactMethod methodName="Email" icon={faEnvelope} content="nyanphamdev@gmail.com" />
+						<ContactMethod methodName="Phone call" icon={faPhone} content="0947-057-091" />
+						<ContactMethod methodName="Location" icon={faMapMarkerAlt} content="Binh Thanh Dist, HCMC" />
 					</div>
 				</div>
 			</section>
@@ -104,5 +92,15 @@ export default function Contact() {
 				document.body
 			)}
 		</>
+	)
+}
+
+function ContactMethod({methodName, icon, content}) {
+	return (
+		<div className="contact-method">
+			<FontAwesomeIcon icon={icon} className="method-icon" />
+			<div className="method-name">{methodName}</div>
+			<p className="method-text">{content}</p>
+		</div>
 	)
 }
