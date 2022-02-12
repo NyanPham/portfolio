@@ -5,22 +5,22 @@ import { Navigation } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import ProjectSlide from './ProjectSlide'
-import nyanLogo from '../assets/nyan-logo.png'
-import nyanDrive from '../assets/nyandrive.png'
+import todo from '../assets/todo.png'
+import gentleNyan from '../assets/gentleNyan.png'
 import pokedexImg from '../assets/pokedex.png'
 
 
 export default function Portfolio() {
     const projectsData = [
         {
-            image: nyanDrive ,
-            title: 'Nyan Drive',
-            description: 'A functional Google-Drive-like app where users can sign up, login, create folders, add files, update and delete them.',
+            image: gentleNyan ,
+            title: 'Nyan Male Shop',
+            description: 'A functional male eccomerce where users can sign up, login, add items to cart and pay real money.',
             demoLink: '#',
             githubLink: '#'
         },
         {
-            image: nyanLogo,
+            image: todo,
             title: 'Todo App',
             description: 'A typical, yet not simple project about CRUD operation, which indeed is necessary in any interactive web application.',
             demoLink: '#',
