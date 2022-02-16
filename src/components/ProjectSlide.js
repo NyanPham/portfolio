@@ -4,13 +4,17 @@ import '../styles/ProjectSlideStyle.css'
 export default function ProjectSlide({image, title, description, demoLink, githubLink}) {
    
     function handleDemoClick() {
-        //Add link here
+        if (demoLink === '#') return
+        const link = document.createElement('a')
+        link.href = demoLink
+        link.target = "_blank"
+        link.click()
     }
 
     return (
         <div className="swiper-data">
             <div className="project-image-container">
-                <img className='project-image' src={image}/>
+                <img className='project-image' src={image} alt={title}/>
             </div>
            
             <div className="project-data">
