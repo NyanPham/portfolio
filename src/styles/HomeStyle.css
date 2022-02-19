@@ -69,7 +69,7 @@
     font-size: var(--fs-huge);
     font-weight: bold;
     color: var(--text-foreground-color);
-    margin-bottom: 36px;
+    margin-top: 2rem;
 }
 
 .my-name {
@@ -79,12 +79,13 @@
 .position {
     font-size: var(--fs-normal);
     color: var(--text-foreground-color);
-    margin-bottom: 12px;
+    margin-top: 1rem;
 }
 
 .greeting-text {
     font-size: var(--fs-small);
     color: var(--text-foreground-color);
+    margin-top: .7rem;
 }
 
 .contact-and-social {
@@ -315,7 +316,18 @@
     }
 
     .greeting > h2 {
-        margin-bottom: 1rem;
+        margin-top: .1rem;
+        font-size: var(--fs-normal);
+    }
+
+    .position {
+        margin-top: .7rem;
+        font-size: var(--fs-semi-normal);
+    }
+
+    .greeting-text {
+        margin-top: .5rem;
+        font-size: var(--fs-small);
     }
 
     .contact-and-social {

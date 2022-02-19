@@ -12,8 +12,8 @@
 }
 
 .logo-container {
-    width: 200px;
-    height: 60px;
+    width: 10rem;
+    height: 5rem;
 }
 
 .logo {
@@ -198,5 +198,12 @@ nav {
     .bars {
         display: flex;
         z-index: 1100;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo-container {
+        width: 9rem;
+        height: 3.5rem;
     }
 }
