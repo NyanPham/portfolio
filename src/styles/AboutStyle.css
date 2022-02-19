@@ -98,8 +98,7 @@
 
 .download-cv-btn {
     background-color: var(--button-background-blue);
-    width: 200px;
-    height: 50px;
+    padding: 1rem 2rem;
     font-size: var(--fs-semi-normal);
     color: var(--foreground-light-color);
     border-radius: .5rem;
@@ -142,5 +141,9 @@
 @media screen and (max-width: 550px) {
     .illustration {
         max-width: 80%;
+    }
+    
+    .download-cv-btn {
+        font-size: 1.15rem;
     }
 }

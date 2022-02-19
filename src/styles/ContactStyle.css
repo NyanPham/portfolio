@@ -209,4 +209,11 @@
             "message"
             "button"
     }
+    .method-name {
+        font-size: 1.15rem;
+    }
+
+    .method-text {
+        font-size: 1rem;
+    }
 }

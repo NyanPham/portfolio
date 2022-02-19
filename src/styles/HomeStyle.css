@@ -88,7 +88,7 @@
 }
 
 .contact-and-social {
-    margin-top: 36px;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -304,12 +304,12 @@
 @media screen and (max-width: 550px) {
     #home {
         flex-direction: column;
+        padding-top: 5rem;
     }
-
-    .home-left {
-        padding-top: 3rem;
+    .profile-image {
+        width: 225px;
+        height: 225px;
     }
-
     .home-right {
         text-align: center;
     }
