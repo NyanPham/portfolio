@@ -17,29 +17,31 @@ export default function Portfolio() {
             title: 'Nyan Male Shop',
             description: 'A functional male eccomerce where users can sign up, login, add items to cart, change them and pay their bill.',
             demoLink: 'https://kind-jepsen-d6f299.netlify.app/',
-            githubLink: '#'
+            githubLink: 'https://github.com/NyanPham/gentlenyanstore-client'
+        },
+        {
+            image: pokedexImg,
+            title: 'PokeDex',
+            description: 'A great simple simulator of PokeDex that can satisfy your every wish to know a pokemon\'s information.',
+            demoLink: 'https://amazing-minsky-880311.netlify.app/',
+            githubLink: 'https://github.com/NyanPham/pokedex-v2'
         },
         {
             image: todo,
             title: 'Todo App',
             description: 'A typical, yet not simple project about CRUD operation, which indeed is necessary in any interactive web application.',
-            demoLink: 'https://awesome-perlman-08271d.netlify.app',
-            githubLink: '#'
+            demoLink: 'https://awesome-perlman-08271d.netlify.app/',
+            githubLink: 'https://github.com/NyanPham/todo-app-react'
         },
+        
         {
             image: weather,
             title: 'Weather Forecast',
-            description: 'An app to forecast the next 3 days in Ho Chi Minh City. Don\'t forget to bring coat to avoid overheating and an umbrella.',
-            demoLink: 'https://eager-heyrovsky-8cb61a.netlify.app/',
-            githubLink: '#'
+            description: 'An app to forecast the next 3 days in Ho Chi Minh City. Don\'t forget to bring coat to avoid overheating and an umbrella in rainy season.',
+            demoLink: 'https://keen-lewin-897206.netlify.app/',
+            githubLink: 'https://github.com/NyanPham/weather-app-js'
         },
-        {
-            image: pokedexImg,
-            title: 'PokeDex',
-            description: 'A great simple simulator of PokeDex can satisfy your every wish to know a pokemon\'s information.',
-            demoLink: '#',
-            githubLink: '#'
-        },
+        
     ] 
 
     return (

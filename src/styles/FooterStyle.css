@@ -35,7 +35,7 @@ footer {
 }
 
 .conclusion > p {
-    font-size: var(--fs-small);
+    font-size: 0.9rem;
     color: var(--footer-text-blue-color);
     font-weight: 400;
 }
@@ -80,15 +80,21 @@ footer {
     font-size: var(--fs-small);
     text-decoration: none;
     color: var(--footer-text-blue-color); 
+    transition: transform 150ms ease-in-out;
 }
 
 .social-items > * {
     font-size: var(--fs-semi-normal);
 }
 
+.links-items > a:hover, .social-items > *:hover {
+    transform: translateY(-2px);
+}
+
 .copyright {
     grid-area: copyright;
     color: var(--footer-text-white-color);
+    font-size: .9rem;
     opacity: .7;
 }
 

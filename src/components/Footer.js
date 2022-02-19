@@ -25,10 +25,10 @@ export default function Footer() {
 
             <h3 className="social">Social media</h3>
             <div className="social-items">
-                <a href="#"><FontAwesomeIcon icon={faGithub} /></a>
-                <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href="https://github.com/NyanPham" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="https://www.linkedin.com/in/nhan-pham-84a602232/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
-            <p className="copyright">All copyright reserved, made by Pham Thanh Nhan</p>
+            <p className="copyright">&copy;2022 | Built by Pham Thanh Nhan</p>
         </footer>
     )
 }

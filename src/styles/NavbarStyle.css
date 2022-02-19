@@ -54,6 +54,10 @@ nav {
     color: var(--text-dark-blue-color);
 }
 
+.dark .nav-links > li a:not(.active):hover {
+    background-color: var(--header-background-color-dark);
+}
+
 .nav-links > li a.active {
     background-color: var(--accent-blue);
 }

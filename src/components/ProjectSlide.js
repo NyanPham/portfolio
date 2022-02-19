@@ -2,14 +2,6 @@ import React from 'react';
 import '../styles/ProjectSlideStyle.css'
 
 export default function ProjectSlide({image, title, description, demoLink, githubLink}) {
-   
-    function handleDemoClick() {
-        if (demoLink === '#') return
-        const link = document.createElement('a')
-        link.href = demoLink
-        link.target = "_blank"
-        link.click()
-    }
 
     return (
         <div className="swiper-data">
@@ -20,9 +12,16 @@ export default function ProjectSlide({image, title, description, demoLink, githu
             <div className="project-data">
                 <h3 className="title">{title}</h3>
                 <p className="description">{description}</p>
-                <button className="demo-btn" onClick={handleDemoClick}>
-                    Demo
-                </button>
+                <a href={demoLink} target="_blank" rel="noreferrer">
+                    <button className="demo-btn">
+                        Demo
+                    </button>
+                </a>
+                <a href={githubLink} target="_blank" rel="noreferrer">
+                    <button className="github-btn">
+                        Github
+                    </button>
+                </a>
             </div>
         </div>
     )

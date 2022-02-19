@@ -11,7 +11,8 @@
 .project-image-container {
     width: 300px;
     height: 200px;
-    background-color: blue;
+    display: grid;
+    place-items: center;
 }
 
 .project-image {
@@ -39,7 +40,7 @@
     color: var(--text-dark-blue-color);
 }
 
-.demo-btn {
+.demo-btn, .github-btn {
     font-size: var(--fs-semi-normal);
     padding: .5rem 1rem;
     border-radius: .5rem;
@@ -47,12 +48,28 @@
     color: var(--foreground-light-color);
     font-weight: bold;
 
-    transition: opacity 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .demo-btn:hover {
     opacity: .7;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 10px 5px rgba(0,0,0,0.1);
 }
+
+.github-btn {
+    background-color: #333;
+    margin-left: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.github-btn:hover {
+    background-color: #555;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 10px 5px rgba(0,0,0,0.1);
+}
+
 
 @media screen and (max-width: 860px) {
     .swiper-data {
@@ -85,5 +102,6 @@
 
     .project-data {
         max-width: 230px;
+        text-align: center;
     }
 }

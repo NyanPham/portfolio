@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../styles/AboutStyle.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
@@ -17,10 +17,14 @@ export default function About() {
                             in Japanese or coding something, then you might find me curling at 
                             a corner vibing to music with 2 cups of coffee.
                         </p>
-                        <button className="download-cv-btn">
-                            <span>Download CV</span>
-                            <FontAwesomeIcon icon={faDownload} />
-                        </button>
+                        <a href="https://firebasestorage.googleapis.com/v0/b/contacts-recevier.appspot.com/o/Pham%20Thanh%20Nhan%20-%20Resume.pdf?alt=media&token=fd2f32e8-dbb3-4a83-be50-8d356746fc17"
+                            target="_blank" rel="noreferrer"
+                        >
+                            <button className="download-cv-btn">
+                                <span>Download CV</span>
+                                <FontAwesomeIcon icon={faDownload} />
+                            </button>
+                        </a>
                     </div>
                     <div className="illustration-container">
                         <div className="illustration">

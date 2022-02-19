@@ -34,7 +34,7 @@
     right: 12px;
     font-size: 2rem;
     background: none;
-    color: var(--text-black-color);;
+    color: #fff;
 }
 
 .modal-close-btn:hover {
