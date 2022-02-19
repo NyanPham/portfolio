@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import '../styles/NavbarStyle.css'
 
 export default function Navbar({darkTheme, handleThemeChange}) {
     const [activeSection, setActiveSection] = useState('home')
     const [windowSize, setWindowSize] = useState(window.innerWidth)
     const [dropdownActive, setDropDownActive] = useState(false)
-
-    let sections = []
+    const getAllSections = useCallback(() => {
+        return document.querySelectorAll('section')
+    }, [])
 
     useEffect(() => {
-        getAllSections()
+        const sections = getAllSections()
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return
@@ -19,16 +20,11 @@ export default function Navbar({darkTheme, handleThemeChange}) {
         sections.forEach(section => {
             observer.observe(section)
         })
-    },[windowSize])
+    },[windowSize, getAllSections])
 
     window.addEventListener('resize', (e) => {
         setWindowSize(window.innerWidth)
     })
-
-
-    function getAllSections() {
-        sections = document.querySelectorAll('section')
-    }
 
     function handleNavLinkClick(e) {
         if (!dropdownActive) return

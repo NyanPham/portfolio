@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../styles/SkillsStyle.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faDatabase, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 import SkillSet from './SkillSet'
 

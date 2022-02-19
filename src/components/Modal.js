@@ -11,7 +11,7 @@ export default function Modal({openModal, closeModal , error, message}) {
         const timeToClose = setTimeout(closeModal, 3000)
 
         return () => clearTimeout(timeToClose)
-    }, [openModal])
+    }, [openModal, closeModal, error, message])
 
     return (
         <div id='modal-box' className={`${openModal ? 'show' : ''}`}>
