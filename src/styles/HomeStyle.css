@@ -49,8 +49,8 @@
 }
 
 .profile-image {
-    width: 350px;
-    height: 350px;
+    width: 21rem;
+    height: 21rem;
     overflow: hidden;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 
@@ -272,8 +272,8 @@
     }
 
     .profile-image {
-        width: 250px;
-        height: 250px;
+        width: 17rem;
+        height: 17rem;
     }
 
     .greeting > h2 {
@@ -308,8 +308,8 @@
         padding-top: 5rem;
     }
     .profile-image {
-        width: 225px;
-        height: 225px;
+        width: 14rem;
+        height: 14rem;
     }
     .home-right {
         text-align: center;
