@@ -118,22 +118,6 @@ Make sure you have npm installed globally on your computer.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/NyanPham/portfolio/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -151,16 +135,6 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
@@ -175,9 +149,8 @@ Project Link: [https://github.com/NyanPham/portfolio](https://github.com/NyanPha
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [FontAwesome](https://fontawesome.com/)
+* [Firebase](https://firebase.google.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -185,14 +158,14 @@ Project Link: [https://github.com/NyanPham/portfolio](https://github.com/NyanPha
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/https://github.com/NyanPham/portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/https://github.com/NyanPham/portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/https://github.com/NyanPham/portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/https://github.com/NyanPham/portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/https://github.com/NyanPham/portfolio.svg?style=for-the-badge
-[stars-url]: https://github.com/https://github.com/NyanPham/portfolio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/https://github.com/NyanPham/portfolio.svg?style=for-the-badge
-[issues-url]: https://github.com/https://github.com/NyanPham/portfolio/issues
-[license-shield]: https://img.shields.io/github/license/https://github.com/NyanPham/portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/https://github.com/NyanPham/portfolio/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/NyanPham/portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/NyanPham/portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/NyanPham/portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/NyanPham/portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/NyanPham/portfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/NyanPham/portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/NyanPham/portfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/NyanPham/portfolio/issues
+[license-shield]: https://img.shields.io/github/license/NyanPham/portfolio.svg?style=for-the-badge
+[license-url]: https://github.com/NyanPham/portfolio/blob/master/LICENSE.txt
 [linkedin-url]: https://www.linkedin.com/in/nhan-pham-84a602232/
