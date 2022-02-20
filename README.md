@@ -62,7 +62,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![portfolio](https://elated-beaver-fdddc3.netlify.app/)[product-screenshot](https://user-images.githubusercontent.com/93678376/154835579-b3aa9aad-7e91-4d43-9d3a-0e017fa030b8.PNG)
+![portfolio](https://user-images.githubusercontent.com/93678376/154835579-b3aa9aad-7e91-4d43-9d3a-0e017fa030b8.PNG)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
