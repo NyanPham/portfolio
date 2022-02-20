@@ -70,9 +70,9 @@
 
 ### Built With
 
-* [HTML]
-* [CSS]
-* [JavaScript]
+* HTML
+* CSS
+* JavaScript
 * [React.js](https://reactjs.org/)
 
 
