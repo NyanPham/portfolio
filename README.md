@@ -126,9 +126,11 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Your Name - Pham Thanh Nhan - nyanphamdev@gmail.com || phamthanhnhanussh@gmail.com
+Pham Thanh Nhan - nyanphamdev@gmail.com || phamthanhnhanussh@gmail.com
 
 Project Link: [https://github.com/NyanPham/portfolio](https://github.com/NyanPham/portfolio)
+
+LinkedIn: [https://www.linkedin.com/in/nhan-pham-84a602232/](https://www.linkedin.com/in/nhan-pham-84a602232/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
