@@ -1,13 +1,5 @@
 <div id="top"></div>
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -32,7 +24,7 @@
     <a href="https://github.com/NyanPham/portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/NyanPham/portfolio">View Demo</a>
+    <a href="https://elated-beaver-fdddc3.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/NyanPham/portfolio/issues">Report Bug</a>
     ·
@@ -59,10 +51,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -167,5 +156,4 @@ Project Link: [https://github.com/NyanPham/portfolio](https://github.com/NyanPha
 [issues-shield]: https://img.shields.io/github/issues/NyanPham/portfolio.svg?style=for-the-badge
 [issues-url]: https://github.com/NyanPham/portfolio/issues
 [license-shield]: https://img.shields.io/github/license/NyanPham/portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/NyanPham/portfolio/blob/master/LICENSE.txt
 [linkedin-url]: https://www.linkedin.com/in/nhan-pham-84a602232/
