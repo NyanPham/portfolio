@@ -15,19 +15,19 @@
     <img src="logo.png" alt="Logo" width="200" height="80">
   </a>
 
-<h3 align="center">GentleNyan Store</h3>
+<h3 align="center">My Portolio Site</h3>
 
   <p align="center">
-    An E-Commerce website specialized into men's fashion. Intergrated with Firebase to allow serverless functionalities such as authentication, database manipulation.
+    A place for me to showcase my recent work
     <br />
-    <a href="https://github.com/NyanPham/gentlenyanstore-client"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/NyanPham/portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://kind-jepsen-d6f299.netlify.app/">View Demo</a>
+    <a href="https://elated-beaver-fdddc3.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/NyanPham/gentlenyanstore-client/issues">Report Bug</a>
+    <a href="https://github.com/NyanPham/portfolio/issues">Report Bug</a>
     ·
-    <a href="https://github.com/NyanPham/gentlenyanstore-client">Request Feature</a>
+    <a href="https://github.com/NyanPham/portfolio">Request Feature</a>
   </p>
 </div>
 
@@ -61,8 +61,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+![portfolio](https://user-images.githubusercontent.com/93678376/155279672-3647cce3-b541-4090-ac2e-48dc83175377.PNG)
 
-![gentleNyan](https://user-images.githubusercontent.com/93678376/154845633-e767cf2d-b457-49b9-a21a-a45a355ae390.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -73,10 +73,6 @@
 * HTML
 * CSS
 * JavaScript
-* [React.js](https://reactjs.org/)
-* [Tailwindcss](https://tailwindcss.com/)
-* [Redux](https://redux.js.org/)
-* [Firebase](https://firebase.google.com/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -100,7 +96,7 @@ Make sure you have npm installed globally on your computer.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/NyanPham/gentlenyanstore-client.git
+   git clone https://github.com/NyanPham/portfolio.git
    ```
 2. Install NPM packages
    ```sh
@@ -112,9 +108,11 @@ Make sure you have npm installed globally on your computer.
 
 <!-- Roadmap -->
 ## Roadmap
-* Authentication: Users can sign up, login or reset their password. 
-* Cart: Users can add items to their cart, adjust the amount or remove from the cart. 
-* Admin: Only the authorized users can add new items and blogs to the database.
+* Landing page
+* About me: A brief introduction and CV included
+* Skills: A quick look at skills I learned
+* Portfolio: Projects I have completed
+* Contact me
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -138,7 +136,7 @@ Don't forget to give the project a star! Thanks again!
 
 Pham Thanh Nhan - nyanphamdev@gmail.com || phamthanhnhanussh@gmail.com
 
-Project Link: [https://github.com/NyanPham/gentlenyanstore-client](https://github.com/NyanPham/gentlenyanstore-client)
+Project Link: [https://github.com/NyanPham/portfolio](https://github.com/NyanPham/portfolio)
 
 LinkedIn: [https://www.linkedin.com/in/nhan-pham-84a602232/](https://www.linkedin.com/in/nhan-pham-84a602232/)
 
@@ -149,7 +147,6 @@ LinkedIn: [https://www.linkedin.com/in/nhan-pham-84a602232/](https://www.linkedi
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Redux Thunk](https://redux.js.org/)
 * [FontAwesome](https://fontawesome.com/)
 * [Firebase - Firestore](https://firebase.google.com/)
 * [Firebase - Storage](https://firebase.google.com/)
