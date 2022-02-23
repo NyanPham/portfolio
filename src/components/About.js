@@ -17,7 +17,7 @@ export default function About() {
                             in Japanese or coding something, then you might find me curling at 
                             a corner vibing to music with 2 cups of coffee.
                         </p>
-                        <a href="https://firebasestorage.googleapis.com/v0/b/contacts-recevier.appspot.com/o/Pham%20Thanh%20Nhan%20-%20Resume.pdf?alt=media&token=5bc698a8-053e-4d29-841c-07d346dd413f"
+                        <a href="https://firebasestorage.googleapis.com/v0/b/contacts-recevier.appspot.com/o/Pham%20Thanh%20Nh%C3%A0n%20-%20Resume.pdf?alt=media&token=48eb62af-1e0f-4854-ba18-2a95041ce1c6"
                             target="_blank" rel="noreferrer"
                         >
                             <button className="download-cv-btn">

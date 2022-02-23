@@ -1,10 +1,11 @@
 <div id="top"></div>
 
+this should be ignore
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -155,5 +156,4 @@ Project Link: [https://github.com/NyanPham/portfolio](https://github.com/NyanPha
 [stars-url]: https://github.com/NyanPham/portfolio/stargazers
 [issues-shield]: https://img.shields.io/github/issues/NyanPham/portfolio.svg?style=for-the-badge
 [issues-url]: https://github.com/NyanPham/portfolio/issues
-[license-shield]: https://img.shields.io/github/license/NyanPham/portfolio.svg?style=for-the-badge
 [linkedin-url]: https://www.linkedin.com/in/nhan-pham-84a602232/
