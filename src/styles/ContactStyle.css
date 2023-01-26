@@ -139,6 +139,11 @@
     font-size: 1em;
 }
 
+.portfolio-app.dark .field > input:focus + .custom-placeholder, 
+.portfolio-app.dark .field > textarea:focus +.custom-placeholder {
+    color: var(--text-dark-blue-color);
+}
+
 .contact-methods {
     display: flex;
     flex-direction: column;

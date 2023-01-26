@@ -9,12 +9,12 @@ export default function Skills() {
             <h2>My skills</h2>
             <div className="skill-sets">
                 <SkillSet
-                    skillSetName="Frontend Developer"
+                    skillSetName="Frontend"
                     icon={faCode}
                     skills={["HTML", "CSS", "JavaScript", "React", "Tailwind"]}
                 />
                 <SkillSet
-                    skillSetName="Backend Developer"
+                    skillSetName="Backend"
                     icon={faDatabase}
                     skills={["Rest API", "Firebase", "NodeJS", "Express", "MongoDB"]}
                 />

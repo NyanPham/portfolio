@@ -18,7 +18,7 @@ export default function Portfolio() {
             image: nyanStore,
             title: "Nyan Market Store",
             description:
-                "A functional Ecommerce website with most useful functionalities such as auth system, sidebar cart, wishlist, checkout, admin panels for shop owner.",
+                "A functional Ecommerce website with most useful functionalities such as auth system, sidebar cart, wishlist, payment, admin panels for shop owner in ReactJS and NodeJS.",
             demoLink: "https://elaborate-chimera-ea1e59.netlify.app/",
             githubLink: "https://github.com/NyanPham/Nyan-Store",
         },
@@ -66,7 +66,7 @@ export default function Portfolio() {
 
     return (
         <section id="portfolio">
-            <h2>Portfolio</h2>
+            <h2>My Creations</h2>
             <Swiper
                 navigation={true}
                 modules={[Navigation]}
