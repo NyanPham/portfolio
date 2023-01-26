@@ -32,6 +32,7 @@ export default function Contact() {
             setSuccessMessage("Your message has been sent")
         } catch (err) {
             setError("Failed to send message. Please, try again later.")
+            console.error(err)
         }
 
         setLoading(false)

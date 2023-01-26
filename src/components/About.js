@@ -23,7 +23,7 @@ export default function About() {
                         but with React and Express.
                     </p>
                     <a
-                        href="https://firebasestorage.googleapis.com/v0/b/contacts-recevier.appspot.com/o/Pham%20Thanh%20Nh%C3%A0n%20-%20Resume.pdf?alt=media&token=48eb62af-1e0f-4854-ba18-2a95041ce1c6"
+                        href="https://firebasestorage.googleapis.com/v0/b/contacts-recevier.appspot.com/o/Pham%20Thanh%20Nhan%20-%20CV.pdf?alt=media&token=1ec5ed18-545e-44ba-9d35-b658b8b0c00a"
                         target="_blank"
                         rel="noreferrer"
                     >
