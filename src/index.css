@@ -56,6 +56,11 @@ body {
   --button-background-blue: #4299E1;
   --footer-text-white-color: #EBF8FF;
   --footer-text-blue-color: #90CDF4; 
+
+  --animation-duration: 350ms;
+  --anmiation-delay-short: 50ms;
+  --anmiation-delay-medium: 100ms;
+  --anmiation-delay-long: 150ms;
 }
 
 
@@ -78,5 +83,85 @@ html {
   section { 
     height: max-content;
     padding: 3rem .5rem;
+  }
+}
+
+@keyframes fade-in-from-left {
+  0% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-from-right {
+  0% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-from-top {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-from-bottom {
+  0% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-out-to-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes fade-out-to-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes fade-out-to-top {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateY(-50px);
+  }
+}
+  
+@keyframes fade-out-to-bottom {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateY(50px);
   }
 }

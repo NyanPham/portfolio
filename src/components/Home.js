@@ -1,10 +1,14 @@
-import React from "react"
+import React, { useRef } from "react"
 import "../styles/HomeStyle.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import useOnScreen from "../hooks/useOnScreen"
 
 export default function Home() {
+    const homeRef = useRef()
+    const isVisible = useOnScreen(homeRef)
+
     function handleContactClick() {
         const a = document.createElement("a")
         a.href = "#contact"
@@ -18,7 +22,7 @@ export default function Home() {
     }
 
     return (
-        <section id="home">
+        <section id="home" ref={homeRef} className={isVisible ? "visible" : ""}>
             <div className="home-left">
                 <div className="profile-image"></div>
             </div>

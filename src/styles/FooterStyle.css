@@ -12,7 +12,7 @@ footer {
     padding: 2rem;
     justify-content: center;
     align-items: center;
-    row-gap: 2rem;
+    row-gap: 1rem;
     column-gap: 2rem;
 }
 
@@ -32,6 +32,7 @@ footer {
     color: var(--footer-text-blue-color);
     font-weight: 400;
     margin-bottom: .5rem;
+    margin-top: 0;
 }
 
 .conclusion > p {

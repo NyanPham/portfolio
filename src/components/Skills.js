@@ -1,11 +1,15 @@
-import React from "react"
+import React, { useRef } from "react"
 import "../styles/SkillsStyle.css"
 import { faCode, faDatabase, faCommentDots } from "@fortawesome/free-solid-svg-icons"
 import SkillSet from "./SkillSet"
+import useOnScreen from "../hooks/useOnScreen"
 
 export default function Skills() {
+    const skillRef = useRef()
+    const isVisible = useOnScreen(skillRef)
+
     return (
-        <section id="skills">
+        <section id="skills" ref={skillRef} className={isVisible && "visible"}>
             <h2>My skills</h2>
             <div className="skill-sets">
                 <SkillSet

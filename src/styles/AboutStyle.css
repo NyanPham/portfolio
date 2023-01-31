@@ -67,6 +67,25 @@
     color: var(--text-dark-blue-color);
 }
 
+.my-text p {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.my-text p:first-child {
+    transition-delay: 300ms;
+}
+
+.my-text p:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+#about.visible .my-text p {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .illustration-container {
     flex: 1;
     display: flex;
@@ -82,6 +101,15 @@
     box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
     padding: 1rem;
     background-color: var(--background-light-blue);
+    
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 500ms ease-in-out 600ms, opacity 500ms ease-in-out 600ms;
+}
+
+#about.visible .illustration {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .illustration::after {

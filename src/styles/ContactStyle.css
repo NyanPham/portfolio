@@ -151,7 +151,7 @@
 }
 
 .contact-method {
-    padding: .5rem .75rem; 
+    padding: .5rem .9rem; 
     background-color: var(--foreground-dark-color);
     border-radius: .5rem;
     box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.1);

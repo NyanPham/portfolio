@@ -55,6 +55,27 @@
     border-radius: .5rem;
     color: var(--text-foreground-color);
     transition: 250ms ease;
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.set:first-of-type {
+    transition-delay: 300ms;
+}
+
+.set:nth-of-type(2) {
+    transition-delay: 400ms;
+}
+
+.set:nth-of-type(3) {
+    transition-delay: 500ms;
+}
+
+#skills.visible .set {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .set:hover {

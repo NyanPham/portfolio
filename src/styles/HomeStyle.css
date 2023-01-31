@@ -59,6 +59,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--foreground-dark-color);
+
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+#home.visible .profile-image {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .greeting {
@@ -70,6 +79,15 @@
     font-weight: bold;
     color: var(--text-foreground-color);
     margin-top: 2rem;
+
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 500ms ease-in-out 200ms, opacity 500ms ease-in-out 200ms;
+}
+
+#home.visible .greeting > h2 {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .my-name {
@@ -82,10 +100,30 @@
     margin-top: 1rem;
 }
 
+#home .position {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 500ms ease-in-out 300ms, opacity 500ms ease-in-out 300ms;
+}
+
+#home.visible .position {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .greeting-text {
     font-size: var(--fs-small);
     color: var(--text-foreground-color);
     margin-top: .7rem;
+
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 500ms ease-in-out 400ms, opacity 500ms ease-in-out 400ms;
+}
+
+#home.visible .greeting-text {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .contact-and-social {
@@ -329,7 +367,7 @@
         margin-top: .5rem;
         font-size: var(--fs-small);
     }
-
+    
     .contact-and-social {
         justify-content: space-evenly;
     }

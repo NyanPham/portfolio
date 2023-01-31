@@ -81,7 +81,7 @@ export default function Contact() {
                     </form>
 
                     <div className="contact-methods">
-                        <ContactMethod methodName="Email" icon={faEnvelope} content="nyanphamdev@gmail.com" />
+                        <ContactMethod methodName="Email" icon={faEnvelope} content="phamthanhnhanussh@gmail.com" />
                         <ContactMethod methodName="Phone call" icon={faPhone} content="0947-057-091" />
                         <ContactMethod methodName="Location" icon={faMapMarkerAlt} content="Binh Thanh Dist, HCMC" />
                     </div>
